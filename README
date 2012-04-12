@@ -1,5 +1,7 @@
-# Setup
+Setup
+=====
 ### Dependencies
+
 1. [node.js](http://nodejs.org/) - install from website
 2. [watchr](https://github.com/mynyml/watchr) 
     ```sudo gem install watchr```
