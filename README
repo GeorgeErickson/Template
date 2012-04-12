@@ -1,0 +1,7 @@
+# Setup
+### Dependencies
+[node.js](http://nodejs.org/) - install from website
+[watchr](https://github.com/mynyml/watchr) - ```sudo gem install watchr```
+[jade](https://github.com/visionmedia/jade#readme) - ```npm install -g jade```
+[coffee-script](http://coffeescript.org/) - ```npm install -g coffee-script```
+[less](http://lesscss.org/) - ```npm install -g less```
