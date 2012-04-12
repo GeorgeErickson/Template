@@ -10,3 +10,7 @@
 ### Building
 1. Run ```watchr watch.rb``` to auto build files on save
 2. Note that if you add a new file you will need to restart watchr
+
+### Built In Libraries
+1. [jquery](http://jqapi.com/)
+2. [bootstrap](http://twitter.github.com/bootstrap/)
