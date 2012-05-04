@@ -1,0 +1,31 @@
+coffee:
+  src_dir: 'src/coffee'
+  out_dir: 'build'
+  files:
+    - input:
+        - 'models/*'
+        - 'views/*'
+        - 'main.coffee'
+      output: 'main.js'
+
+less:
+  src_dir: 'src/less'
+  out_dir: 'build'
+  files:
+    - input: 'base.less'
+      output: 'base.css'
+
+jade:
+  src_dir: 'src/jade'
+  out_dir: 'build'
+  files:
+    - input: 'index.jade'
+
+templates:
+  src_dir: 'src/templates'
+  out_dir: 'build'
+  namespace: 'app.templates'
+  files:
+    - input: 'example.jade'
+
+
