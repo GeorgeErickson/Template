@@ -82,29 +82,33 @@ task 'build:templates', 'compiles all of the templates source', () ->
       
 task 'watch', 'compiles all code on save', ->
   #watch coffee script
-  watch_r assets.coffee.src_dir, (err, watcher) ->
-    watcher.on 'change', (target) ->
-      console.log target.path
-      growl "Building #{target.path}"
-      invoke 'build:coffee'
+  if assets.coffee
+    watch_r assets.coffee.src_dir, (err, watcher) ->
+      watcher.on 'change', (target) ->
+        console.log target.path
+        growl "Building #{target.path}"
+        invoke 'build:coffee'
   
-  watch_r assets.less.src_dir, (err, watcher) ->
-    watcher.on 'change', (target) ->
-      console.log target.path
-      growl "Building #{target.path}"
-      invoke 'build:less'
+  if assets.less
+    watch_r assets.less.src_dir, (err, watcher) ->
+      watcher.on 'change', (target) ->
+        console.log target.path
+        growl "Building #{target.path}"
+        invoke 'build:less'
   
-  watch_r assets.jade.src_dir, (err, watcher) ->
-    watcher.on 'change', (target) ->
-      console.log target.path
-      growl "Building #{target.path}"
-      invoke 'build:jade'
+  if assets.jade
+    watch_r assets.jade.src_dir, (err, watcher) ->
+      watcher.on 'change', (target) ->
+        console.log target.path
+        growl "Building #{target.path}"
+        invoke 'build:jade'
   
-  watch_r assets.templates.src_dir, (err, watcher) ->
-    watcher.on 'change', (target) ->
-      console.log target.path
-      growl "Building #{target.path}"
-      invoke 'build:templates'
+  if assets.templates
+    watch_r assets.templates.src_dir, (err, watcher) ->
+      watcher.on 'change', (target) ->
+        console.log target.path
+        growl "Building #{target.path}"
+        invoke 'build:templates'
   
   
       
